@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>城市一周天气</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        list-style: none;
+    }
+    .weather-forecast{
+        position: relative;
+        width: 500px;
+        min-height: 325px;
+        padding: 20px;
+    }
+    .weather-forecast .loading-tips{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .weather-forecast .forecast-today{
+        padding-bottom: 5px;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .weather-forecast .forecast-today .today-item{
+        float: left;
+        width: 25%;
+    }
+    .weather-forecast .forecast-today .city-name{
+        padding-top: 5px;
+        font-size: 30px;
+    }
+    .weather-forecast .forecast-today .time-date,
+    .weather-forecast .forecast-today .wind-direction{
+        padding-top: 5px;
+    }
+    .weather-forecast .forecast-today .weather-sign{
+        padding-top: 8px;
+    }
+    .weather-forecast .forecast-today .city-name{
+        padding-top: 5px;
+        font-size: 30px;
+    }
+    .weather-forecast .forecast-today .temperature-num{
+        padding-top: 5px;
+    }
+    .weather-forecast .forecast-week{
+        color: #116BBD;
+    }
+    .weather-forecast .forecast-week table{
+        border-collapse: collapse;
+    }
+    .weather-forecast .forecast-week .forecast-item{
+        border-bottom: 1px dotted #116BBD;
+        height: auto;
+        overflow: hidden;
+    }
+    .weather-forecast .forecast-week .forecast-item:hover{
+        color: #fff;
+        background: #116BBD;
+    }
+    .weather-forecast .forecast-week .forecast-item td{
+        display: table-cell;
+        width: 20%;
+        border: none;
+        padding: 5px 0 5px 10px;
+        text-align: left;
+        vertical-align: middle;
+    }
+    </style>
+</head>
+<body>
+
+
+<div class="weather-forecast">
+    <div class="loading-tips">
+        数据载入中...
+    </div>
+    <div class="forecast-today">
+    </div>
+    <div class="forecast-week">
+    </div>
+</div>
+
+<script src="js/ajax.js"></script>
+<script src="js/weather.js"></script>
+
+</html>

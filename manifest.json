@@ -1,0 +1,25 @@
+// 带选项页面的扩展
+{
+    "name": "天气预报",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "一款天气预报插件",
+    "icons": {
+        "16": "weather16.png",
+        "32": "weather32.png",
+        "48": "weather48.png",
+        "128": "weather128.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "weather.png",
+            "38": "weather.png"
+        },
+        "default_title": "天气预报",
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "http://api.k780.com:88/?app=weather.future&weaid=1&&appkey=18524&sign=33461eb8474c8317d0864da952cf4671&format=json&weaid=*"
+    ]
+}

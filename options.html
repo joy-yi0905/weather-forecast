@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>城市一周天气</title>
+    <style>
+    .plugin-info{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .plugin-info .intro{
+        padding-left: 3em;
+    }
+    .plugin-info .intro p{
+        text-indent: -3em;
+    }
+    .plugin-info .setting{
+        border-top: 1px dotted #666;
+    }
+    </style>
+</head>
+<body>
+
+<div class="plugin-info">
+    <div class="intro">
+        <p>简介：这是一款可以预览每个城市一周天气的chrome插件，数据来源于某个网络网站，在此非常感谢数据提供。如果对于本款chrome应用有任何问题或者建议，欢迎联系我们！</p>
+        <p>版本：0.0.1</p>
+        <p>支持：<a href="http://www.yi-jy.com" target="_blank">http://www.yi-jy.com</a></p>
+    </div>
+    <div class="setting">
+        <p>若你要设置其他城市的天气，请在文本框输入，然后保存即可！</p>
+        <p>
+            <input type="text" id="text-city" placeholder="请输入城市名称"/>
+            <input type="button" id="btn-save" value="保存" />
+        </p>
+    </div>
+</div>
+
+<script src="js/ajax.js"></script>
+<script src="js/options.js"></script>
+
+</html>
