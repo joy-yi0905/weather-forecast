@@ -20,6 +20,6 @@
     },
     "options_page": "options.html",
     "permissions": [
-        "http://api.k780.com:88/?app=weather.future&weaid=1&&appkey=18524&sign=33461eb8474c8317d0864da952cf4671&format=json&weaid=*"
+        "http://api.k780.com:88/?app=weather.future&weaid=1&&appkey=30783&sign=ab14edc289d3364f7ec395dae2684e54&format=json&weaid=*"
     ]
 }

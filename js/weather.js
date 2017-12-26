@@ -40,7 +40,7 @@
 
     ajaxFn({
         url: 'http://api.k780.com:88/',
-        paraData: 'app=weather.future&weaid=1&&appkey=18524&sign=33461eb8474c8317d0864da952cf4671&format=json&weaid=' + (localStorage.city || '南京'),
+        paraData: 'app=weather.future&weaid=1&&appkey=30783&sign=ab14edc289d3364f7ec395dae2684e54&format=json&weaid=' + (localStorage.city || '南京'),
         callback: function(data) {
             chrome.browserAction.setTitle({
                 title: '天气预报-' + localStorage.city
