@@ -1,2 +1,2 @@
 # weather-forecast
-一个预览城市一周天气的chrome插件
+一个预览城市一周天气的chrome插件，API数据来源网络！
